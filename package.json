@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "install": "npm install",
+    "postinstall": "npm run build && npm run lint",
+    "dev-docker": "npm run dev -- --hostname 0.0.0.0"
   },
   "dependencies": {
     "next": "14.0.0",
